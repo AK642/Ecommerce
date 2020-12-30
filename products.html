@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hack</title>
+        <!-- <link rel="icon" href="assets/images/H_logo_link_icon.png" type="image/png" sizes="16x16"> -->
+        <!-- Bootstrap Css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="assets/css/products.css">
+    </head>
+    <body>
+
+        <!--=================  Navigation START =================-->
+        <section class="header-section fixed-top" id="header-section">
+            <div class="header" id="header">
+                <div class="logo-container">
+                    <span>Favor e-Store</span>
+                </div>
+                <div class="link-container">
+                    <ul>
+                        <li><a class="hero active" href="#">Home</a></li>
+                        <li><a class="product" href="#product">Products</a></li>
+                        <li><a class="sale" href="#sale">Services</a></li>
+                        <li><a class="top-collection" href="#top-collection">About</a></li>
+                        <li><a class="shop" href="#shop">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="icon-container">
+                    <div class="headericon-div">
+                        <a href="#">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <div class="cart">3</div>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            <div class="cart">4</div>
+                        </a>
+                        <a href="#" class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Login</a>
+                            <a class="dropdown-item" href="#">Register</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-icon" onclick="myFunction()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+        <div id="wrapperBg" onclick="RemoveSide()"></div>
+        <section class="header-section-sidebar" id="header-section-sidebar">
+            <div class="header-sidebar" id="header-sidebar">
+                <div class="menu-icon" onclick="myFunctionSidebar()">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+               
+                <div class="logo-container">
+                    <span>Favor e-Store</span>
+                </div>
+                <div class="link-container">
+                    <ul>
+                        <li><a class="hero active" href="#">Home</a></li>
+                        <li><a class="product" href="#product">Products</a></li>
+                        <li><a class="top-collection" href="#top-collection">Services</a></li>
+                        <li><a class="wishlist" href="#">WishList <div class="cart">3</div></a></li>
+                        <li><a class="Cart" href="#">Cart <div class="cart">4</div></a></li>
+                        <li><a class="shop" href="#shop">About</a></li>
+                        <li><a class="sale"href="#sale">Contact</a></li>
+                        <li>
+                            <a href="#">Login</a>
+                            <span>/</span>
+                            <a href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--=================  Navigation END =================-->
+
+        <!--==================Product Section START===================-->
+
+        <section class="product-section">
+            <div class="heading-sorting container">
+                <div class="heading">
+                    <h3>All Products</h3>
+                </div>
+                <div class="sorting">
+                    <form>
+                        <select name="dropdown" id="">
+                            <option value="1">Default Sorting</option>
+                            <option value="2">Sort By Price</option>
+                            <option value="3">Sort By Popularity</option>
+                            <option value="4">Sort By Sale</option>
+                            <option value="5">Sort By Rating</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="product-card-section container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <img src="assets/images/pic3.jpg" alt="">
+                                <div class="img-wrapper"></div>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Boy's T-Shirt</a>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <h2>$ 59.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <img src="assets/images/pic5.jpg" alt="">
+                                <div class="img-wrapper"></div>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Boy's T-Shirt</a>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <h2>$ 59.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <img src="assets/images/pic1.jpg" alt="">
+                                <div class="img-wrapper"></div>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Boy's T-Shirt</a>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <h2>$ 59.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <img src="assets/images/pic4.jpg" alt="">
+                                <div class="img-wrapper"></div>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Boy's T-Shirt</a>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <h2>$ 59.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <img src="assets/images/pic1.jpg" alt="">
+                                <div class="img-wrapper"></div>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Boy's T-Shirt</a>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <h2>$ 59.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <img src="assets/images/pic3.jpg" alt="">
+                                <div class="img-wrapper"></div>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Boy's T-Shirt</a>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <h2>$ 59.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <img src="assets/images/pic2.jpg" alt="">
+                                <div class="img-wrapper"></div>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Boy's T-Shirt</a>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <h2>$ 59.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <img src="assets/images/pic5.jpg" alt="">
+                                <div class="img-wrapper"></div>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"><div class="anima"></div></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Boy's T-Shirt</a>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <h2>$ 59.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination container">
+                <div class="pages">
+                    <ul class="paging">
+                        <li><a href="#" class="prev">< Prev</a></li>
+                        <li class="page-number active"><a href="#">1</a></li>
+                        <li class="page-number"><a href="#">2</a></li>
+                        <li class="page-number"><a href="#">3</a></li>
+                        <li class="page-number"><a href="#">4</a></li>
+                        <li><a href="#" class="next">Next ></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--==================Product Section END===================-->
+        
+        <!--====================Footer Section START======================-->
+
+        <section class="footer-section">
+            <div class="footer-container container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 content">
+                        <h4>Extras</h4>
+                        <ul>
+                            <li><a href="#">Brands</a></li>
+                            <li><a href="#">Gift Certificates</a></li>
+                            <li><a href="#">Affiliate</a></li>
+                            <li><a href="#">Specials</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 content">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 content">
+                        <h4>My Account</h4>
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Wish List</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 content">
+                        <h4>Conatct Us</h4>
+                        <p class="address">103, Lake city, Dindoli Street, Surat, INDIA.</p>
+                        <p class="email">hackinfotech@gmail.com</p>
+                        <p class="mobile-number">(+91) 7096021108 <br> (+91) 9723592915</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====================Footer Section END======================-->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="assets/js/products.js"></script>
+        
+    </body>
+</html>
